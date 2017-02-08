@@ -1,8 +1,32 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="UTF-8">
+
     <title>SIMPLE FORM</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
   </head>
   <body>
+    <form action=''>
+      <fieldset>
+        <legend>Personal information</legend>
+        First name:
+        <input type='text' name='firstname'>
+        Last name:
+        <input type='text' name='lastname'>
+        Sex:
+        <input type='radio' name='gender' value='male' checked>Male
+        <input type='radio' name='gender' value='female'>Female
+        <select name='color'>
+          <option>red</option>
+          <option>green</option>
+          <option>blue</option>
+          <option>yellow</option>
+        </select>
+      </fieldset>
+      <input type='submit' value='Submit'>
+    </form>
   </body>
 </html>
