@@ -9,7 +9,7 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <form action=''>
+    <form name='basicForm' action='' onsubmit="return validateForm();">
       <fieldset>
         <legend>Personal information</legend>
         First name:
@@ -19,12 +19,24 @@
         Sex:
         <input type='radio' name='gender' value='male' checked>Male
         <input type='radio' name='gender' value='female'>Female
+      </fieldset>
+      <fieldset>
+        <legend>Details</legend>
+        Favourite color:
         <select name='color'>
           <option>red</option>
           <option>green</option>
           <option>blue</option>
           <option>yellow</option>
         </select>
+        Favourite sport:
+        <input list='sports'>
+        <datalist id='sports'>
+          <option value='basketball'>
+          <option value='football'>
+          <option value='swimming'>
+          <option value='running'>
+        </datalist>
       </fieldset>
       <input type='submit' value='Submit'>
     </form>
