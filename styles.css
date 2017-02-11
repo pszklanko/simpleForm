@@ -4,3 +4,7 @@ input {
 select {
   display: block;
 }
+input:invalid {
+  background-color: #ff8080;
+  border-color: #e60000;
+}

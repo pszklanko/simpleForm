@@ -13,9 +13,13 @@
       <fieldset>
         <legend>Personal information</legend>
         First name:
-        <input type='text' name='firstname'>
+        <input type='text'
+               name='firstname'
+               pattern='([A-Z])\w+'
+               title='Start with capital letter no numbers or special characters allowed'
+               required>
         Last name:
-        <input type='text' name='lastname'>
+        <input type='text' name='lastname' required>
         Sex:
         <input type='radio' name='gender' value='male' checked>Male
         <input type='radio' name='gender' value='female'>Female
